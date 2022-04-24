@@ -87,7 +87,7 @@ function SendSol() {
         await connection.confirmTransaction(fromAirdropSignature);
 
         // Generate a new wallet to receive newly minted token
-        const toWallet = new PublicKey("2hYca42EE2kwmFZPV7M4skev1za7atWBh5ctzQWfsTD7")
+        const toWallet = new PublicKey("INSERT YOUR PUBLIC KEY HERE")
 
         // Get the token account of the fromWallet address, and if it does not exist, create it
         const fromTokenAccount = await getOrCreateAssociatedTokenAccount(

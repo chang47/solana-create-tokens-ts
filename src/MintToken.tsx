@@ -23,7 +23,7 @@ function MintToken() {
     // Generate a new wallet keypair and airdrop SOL
     const fromWallet = Keypair.generate();
     // Public Key to your Phantom Wallet
-    const toWallet = new PublicKey("2hYca42EE2kwmFZPV7M4skev1za7atWBh5ctzQWfsTD7");
+    const toWallet = new PublicKey("INSERT YOUR PUBLIC KEY HERE");
 	let fromTokenAccount: Account; 
 	let mint: PublicKey;
 
