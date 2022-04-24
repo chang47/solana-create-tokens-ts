@@ -49,7 +49,12 @@ function MintNft() {
     }
     async function mintNft() {
         // Get the token account of the toWallet address, and if it does not exist, create it
-        const toTokenAccount = await getOrCreateAssociatedTokenAccount(connection, fromWallet, mint, fromWallet.publicKey);
+        const toTokenAccount = await getOrCreateAssociatedTokenAccount(
+            connection, 
+            fromWallet, 
+            mint, 
+            fromWallet.publicKey
+        );
         console.log(`toTokenAccount ${toTokenAccount.address}`);
 
         // Mint 1 new token to the "fromTokenAccount" account we just created
